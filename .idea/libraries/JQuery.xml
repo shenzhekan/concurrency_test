@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="JQuery" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="jQuery" />
+      <option name="frameworkVersion" value="1.3.2" />
+    </properties>
+    <CLASSES>
+      <root url="file://F:/大学学习文件综合/大二暑假练习/jquery-1.3.2.min.js" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

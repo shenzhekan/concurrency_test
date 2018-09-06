@@ -1,0 +1,28 @@
+=======================================================================
+// Table:红包表
+=======================================================================
+create table t_red_package(
+    id          int(12)    not null auto_increment   comment '红包编号',
+    user_id     int(12)    not null  comment '发红包用户',
+    amount      decimal(16,2)   not null  comment '红包金额',
+    send_date   timestamp  not null  comment '发红包时间',
+    total       int(12)    not null  comment '小红包个数',
+    unit_amount decimal(12)     not null  comment '单个红包金额',
+    stock       int(12)    not null  comment '剩余小红包个数',
+    version     int(12) default 0  not null  comment '版本',
+    note        varchar(256)    not null  comment '备注',
+    primary key clustered(id)
+);
+
+=======================================================================
+// Table:用户抢红包表
+=======================================================================
+create table t_user_red_package(
+    id          int(12)    not null auto_increment  comment '编号',
+    red_package_id     int(12)    not null  comment '红包编号',
+    user_id     int(12)    not null  comment '抢红包用户编号',
+    amount      decimal(16,2)     not null  comment '抢红包金额',
+    grab_time   timestamp  not null  comment '抢红包时间',
+    note        varchar(256)      not null  comment '备注',
+    primary key clustered(id)
+);
